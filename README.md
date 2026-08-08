@@ -1,3 +1,29 @@
+# AgentGPT Engine 🤖🌐
+
+**Autonomous Goal-Decomposition & Web Agent Builder**  
+*Part of the [ChelseaWoods](https://github.com/chichi-lyman/ChelseaWoods) ecosystem by [@chichi-lyman](https://github.com/chichi-lyman)*
+
+---
+
+## 📌 Overview
+`agent-gpt` is the goal-driven execution laboratory for the Nova Umbrella network. It allows you to give an agent a high-level goal (e.g., *"Research top 5 AI trends for Q3 and draft a summary report"*), after which the engine autonomously breaks the goal down into tasks, executes them sequentially using web browsing and Python execution, and refines its output recursively.
+
+---
+
+## 🏗️ Architecture & Core Components
+
+| Component | Module | Operational Focus |
+| :--- | :--- | :--- |
+| **`Goal Decomposer`** | `decomposer.py` | Takes high-level objectives and splits them into ordered execution steps. |
+| **`Task Loop`** | `agent_loop.py` | Sequentially executes tasks, evaluates output quality, and appends sub-tasks dynamically. |
+| **`Memory Vault`** | `memory.py` | Stores conversation context, web extraction logs, and execution state. |
+| **`UI Bridge`** | `app.py` | Web dashboard / terminal interface for monitoring live agent progress. |
+
+---
+
+## 🚀 Execution Flow
+
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/reworkd/AgentGPT/main/next/public/banner.png" height="300" alt="AgentGPT Logo"/>
 </p>
